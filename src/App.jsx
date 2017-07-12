@@ -1,13 +1,25 @@
-import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+import React from 'react';
 
-class App extends Component {
+import Map from './react/Map/Map.jsx';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
-      <div className="App">
-        Hello App
+      <div className="td-app">
+        <Map />
       </div>
     );
   }
 }
+
+// App.propTypes = {};
+
+// App.defaultProps = {};
 
 export default App;
