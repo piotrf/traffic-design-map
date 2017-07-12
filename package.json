@@ -15,8 +15,8 @@
     "react-scripts": "1.0.10"
   },
   "devDependencies": {
+    "google-map-react": "^0.24.0",
     "lodash": "^4.17.4",
-    "prettier": "^1.5.2",
-    "react-google-maps": "^7.1.0"
+    "prettier": "^1.5.2"
   }
 }

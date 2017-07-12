@@ -1,10 +1,23 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
+import GoogleMap from 'google-map-react';
 
-const Playground = props => <div />;
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-// Playground.propTypes = {};
+const Playground = props => (
+  <GoogleMap bootstrapURLKeys={{ key: 'AIzaSyApjk_AdVABnyN0PWIjr52lx5Gg_GZRMgc' }} defaultCenter={props.center} defaultZoom={props.zoom}>
+    <AnyReactComponent lat={54.5189} lng={18.5305} text={'Gdynia'} />
+  </GoogleMap>
+);
 
-// Playground.defaultProps = {};
+Playground.propTypes = {
+  // center: PropTypes.obj
+  zoom: PropTypes.number,
+};
+
+Playground.defaultProps = {
+  center: { lat: 54.5189, lng: 18.5305 },
+  zoom: 14,
+};
 
 export default Playground;
