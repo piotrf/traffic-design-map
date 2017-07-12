@@ -3,6 +3,7 @@ import React from 'react';
 
 import Map from './react/Map/Map.jsx';
 
+require('./reset.css');
 class App extends React.Component {
   constructor(props) {
     super(props);
