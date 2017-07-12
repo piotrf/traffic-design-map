@@ -4,6 +4,8 @@ import React from 'react';
 import Map from './react/Map/Map.jsx';
 
 require('./reset.css');
+require('./App.css');
+
 class App extends React.Component {
   constructor(props) {
     super(props);
