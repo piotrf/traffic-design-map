@@ -11,7 +11,7 @@ const Map = props => (
 );
 
 Map.propTypes = {
-  // center: PropTypes.obj
+  center: PropTypes.object,
   zoom: PropTypes.number,
 };
 
