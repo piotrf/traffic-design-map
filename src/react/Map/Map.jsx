@@ -10,7 +10,7 @@ const Map = props => {
   const markers = props.mapData.markers;
   const markersIds = props.mapData.markersIds;
   return (
-    <GoogleMap bootstrapURLKeys={{ key: 'AIzaSyApjk_AdVABnyN0PWIjr52lx5Gg_GZRMgc' }} defaultCenter={props.center} defaultZoom={props.zoom}>
+    <GoogleMap bootstrapURLKeys={{ key: 'AIzaSyApjk_AdVABnyN0PWIjr52lx5Gg_GZRMgc' }} defaultCenter={props.mapData.center} defaultZoom={props.mapData.zoom}>
       {markersIds.map(markerId => {
         const marker = markers[markerId];
         return <MarkerHOC key={marker.id} lat={marker.lat} lng={marker.lng} title={marker.title} text={marker.text} />;
@@ -20,14 +20,9 @@ const Map = props => {
 };
 
 Map.propTypes = {
-  center: PropTypes.object,
   mapData: PropTypes.object.isRequired,
-  zoom: PropTypes.number,
 };
 
-Map.defaultProps = {
-  center: { lat: 54.5189, lng: 18.5305 },
-  zoom: 15,
-};
+Map.defaultProps = {};
 
 export default Map;

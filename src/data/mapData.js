@@ -4,6 +4,8 @@ const id1 = _generateUUID();
 const id2 = _generateUUID();
 
 const mapData = {
+  center: { lat: 54.5189, lng: 18.5305 },
+  zoom: 15,
   markers: {
     [id1]: {
       id: id1,
