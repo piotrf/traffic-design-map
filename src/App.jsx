@@ -1,6 +1,7 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 
+import mapData from './data/mapData.js';
 import Map from './react/Map/Map.jsx';
 
 require('./reset.css');
@@ -15,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="td-app">
-        <Map />
+        <Map mapData={mapData} />
       </div>
     );
   }
