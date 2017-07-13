@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import GoogleMap from 'google-map-react';
 
-import Marker from './Marker.jsx';
+import Marker from '../Marker/Marker.jsx';
 
 const MarkerHOC = ({ title, text }) => <Marker title={title} text={text} />;
 

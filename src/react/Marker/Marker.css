@@ -1,0 +1,29 @@
+:root {
+  --marker-size: 30px;
+  --marker-color: #000;
+}
+
+.td-marker {
+  color: red;
+  position: relative;
+}
+
+.td-marker__symbol {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: var(--marker-size);
+}
+
+.td-marker__title {
+  color: var(--marker-color);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 100px;
+}
