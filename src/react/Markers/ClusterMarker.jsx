@@ -5,7 +5,7 @@ import MarkerSymbol from './SimpleMarker.svg';
 
 require('./SimpleMarker.css');
 
-const SimpleMarker = props => (
+const ClusterMarker = props => (
   <div className="td-marker">
     <img src={MarkerSymbol} className="td-marker__symbol" alt="Traffic Design Item" />
     <span className="td-marker__title">{props.title}</span>
@@ -13,9 +13,9 @@ const SimpleMarker = props => (
   </div>
 );
 
-SimpleMarker.propTypes = {
+ClusterMarker.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
-export default SimpleMarker;
+export default ClusterMarker;

@@ -3,6 +3,7 @@ import React from 'react';
 import GoogleMap from 'google-map-react';
 
 import SimpleMarker from '../Markers/SimpleMarker.jsx';
+import ClusterMarker from '../Markers/ClusterMarker.jsx';
 
 const MarkerHOC = ({ title, text }) => <SimpleMarker title={title} text={text} />;
 
