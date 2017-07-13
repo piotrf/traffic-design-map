@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import GoogleMap from 'google-map-react';
 
-import Marker from '../Marker/Marker.jsx';
+import SimpleMarker from '../Markers/SimpleMarker.jsx';
 
-const MarkerHOC = ({ title, text }) => <Marker title={title} text={text} />;
+const MarkerHOC = ({ title, text }) => <SimpleMarker title={title} text={text} />;
 
 const Map = props => {
   const markers = props.mapData.markers;

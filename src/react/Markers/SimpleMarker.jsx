@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import MarkerSymbol from './Marker.svg';
+import MarkerSymbol from './SimpleMarker.svg';
 
-require('./Marker.css');
+require('./SimpleMarker.css');
 
 const Marker = props => (
   <div className="td-marker">
-    <img src={MarkerSymbol} className="td-marker__symbol" />
+    <img src={MarkerSymbol} className="td-marker__symbol" alt="Traffic Design Item" />
     <span className="td-marker__title">{props.title}</span>
     {/* <span className="td-marker__text">{props.text}</span> */}
   </div>
